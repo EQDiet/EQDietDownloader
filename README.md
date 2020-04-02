@@ -1,4 +1,4 @@
-# EQDietDownloader1.0
+# EQDiet Downloader 1.0
 Downloads the latest version of EQDiet
 
 ## Coming soon
