@@ -2,7 +2,6 @@
 Downloads the latest version of EQDiet
 
 ## Coming soon
-
 We are preparing the source code of the aplication, but it is currently available at EQDiet's website!
 
 ### Download EQDiet Downloader:
