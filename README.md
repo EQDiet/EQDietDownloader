@@ -7,6 +7,7 @@ We are preparing the source code of the aplication, but it is currently availabl
 ### Download EQDiet Downloader:
 
 [Download page](https://eqdiet.weebly.com/downloads.html)
+
 [Information page with source code](https://eqdiet.weebly.com/eqdiet-downloader.html)
 
 ![Building image](https://eqdiet.weebly.com/uploads/1/2/2/7/122786941/webp-net-resizeimage_orig.png)
