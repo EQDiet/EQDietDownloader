@@ -11,7 +11,7 @@ To know more about this release, visit [this link](https://eqdiet.weebly.com/rel
 
 ![Image of EQDiet](https://eqdiet.weebly.com/uploads/1/2/2/7/122786941/eqdiet_orig.png)
 
-## Building source code:
+## Building the source code:
 
 ### Requirements:
 
@@ -27,12 +27,12 @@ To know more about this release, visit [this link](https://eqdiet.weebly.com/rel
 ### Procedure:
 
 1. Set Java JDK bin folder to PATH. View [this video](https://www.youtube.com/watch?v=vhBNV8no4CI) if you don't know how to do it.
-2. Download source code by clicking "clone or download" button or by running this command:                          
+2. Download the source code by clicking "clone or download" button or by running this command:                          
 `git clone https://github.com/EQDiet/EQDietDownloader1.0.git` (Only if you have GIT installed)
 3. Extract the files to any folder.
 4. Open command prompt (cmd.exe).
 5. Go to the destination folder you have extracted the files.
-6. Run "EQDietCompiler.bat /Compile" to compile source code. Capital letters and .bat extension are optional to execute this command.
+6. Run "EQDietCompiler.bat /Compile" to compile the source code. Capital letters and .bat extension are optional to execute this command.
 7. Now you have compiled correctly EQDiet Downloader 1.0. Check your Build folder.
 8. If you want to generate the executable JAR file, run "EQDietCompiler.bat /Jar" to compile it.
 9. Your JAR file will be correctly generated at Release directory.
