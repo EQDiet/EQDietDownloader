@@ -35,8 +35,8 @@ To know more about this release, visit [this link](https://eqdiet.weebly.com/rel
 6. Run "EQDietCompiler.bat /Compile" to compile source code. Capital letters and .bat extension are optional to execute this command.
 7. Now you have compiled correctly EQDiet Downloader 1.0. Check your Build folder.
 8. If you want to generate the executable JAR file, run "EQDietCompiler.bat /Jar" to compile it.
-9. Your JAR file will correctly generated at Release directory.
-10. If you want to get the EXE file with EQDiet icon, you need to install Launch4j.
+9. Your JAR file will be correctly generated at Release directory.
+10. If you want to get the EXE file with the EQDiet icon, you need to install Launch4j.
 11. Run EQDietCompiler.bat /Launch4j to download and install Launch4j.
 12. If the installation was completed successfully, run Launch4j via start menu or by searching Launch4j on the search bar.
 11. Choose "Output file" option to the folder you want and with the executable name with .exe extansion you want.
