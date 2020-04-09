@@ -40,4 +40,4 @@ You are not allowed to:
 
 ### Finally, thanks a lot if you collaborated with us in the development of the application!
 
-#### © 2020, EQDiet
+##### © 2020, EQDiet
