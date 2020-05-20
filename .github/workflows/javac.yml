@@ -20,7 +20,5 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Preparing for build
-      run: cd EQDietDownloader1.0-src/src
     - name: Build with javac
-      run: javac -verbose EQDietDownloader.java
+      run: cd EQDietDownloader1.0-src/src && javac -verbose EQDietDownloader.java
