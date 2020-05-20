@@ -39,10 +39,11 @@ echo.
 popd
 echo Copying necessary files...
 echo.
-copy src\*.dll Build /Y
-md Build\net\jimmc\jShortcut\ >NUL 2>NUL
-echo.
-copy src\net\jimmc\jShortcut\*.* Build\net\jimmc\jShortcut\ /Y
+md backup >nul 2>nul
+move src\EQDietDownloader.java backup >NUL 2>NUL
+for /d %%i in (src\*.*) do xcopy /s /e /y "src\*.*" "build\"
+move backup\EQDietDownloader.java src >nul 2>nul
+rd /s /q backup >nul 2>nul
 echo.
 IF EXIST Build\EQDietDownloader.class (echo Compilation done! Check your Build folder.) else echo Error while compilating.
 exit /b
