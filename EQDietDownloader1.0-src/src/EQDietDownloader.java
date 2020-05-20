@@ -2,7 +2,7 @@
  * EQDiet Downloader coded by Daniel Lopez Tena.
  * (C) 2020, Daniel Lopez Tena
  * Special thanks to:
- * - user4257136 on www.stackoverflow for publishing createDesktopShortcut code!
+ * - user4257136 on www.stackoverflow.com for publishing createDesktopShortcut code!
  * - Jim McBeath on github.com for publishing jimmc package!
  * - baeldung on www.baeldung.com for publishing Download code!
  * - and you for using our application!
@@ -337,11 +337,12 @@ public class EQDietDownloader extends javax.swing.JFrame{
             System.exit(0);
         }
         GetVariables();
+        // Downloads EQDiet's files
         Download("https://drive.google.com/uc?export=download&id=1qUYHj-cp9SR7HwZl8vSkY2JkqTenseTs", "Data\\Version.txt");
         Download("https://drive.google.com/uc?export=download&id=1guxv_CaLZfd8JwbCLmk69v3L50g1NE39", "Data\\VersionNumber.txt");
         GetFileName();
         GetFileVersion();
-        if(DownloadSourceCode == 1){
+        if(DownloadSourceCode == 1){ // Checks if the user marked the option to download EQDiet's source code
             Download("https://github.com/EQDiet/EQDiet" + filename + "/releases/download/" + fileversion + "/EQDiet" + filename + ".exe", "EQDiet" + filename + ".exe");
             Download("https://drive.google.com/uc?export=download&id=1FTz1a2WWUdH8tjqEx7AUVdR1lHHBMxJK","Data\\EQDiet.ico");
             Download("https://codeload.github.com/EQDiet/EQDiet" + filename + "/zip/master", "EQDiet" + filename +"-master.zip");
