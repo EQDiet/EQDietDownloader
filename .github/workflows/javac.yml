@@ -21,7 +21,4 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with javac
-      run: javac -verbose EQDietDownloader1.0-src/src/EQDietDownloader.javant
-      run: cd EQDietDownloader1.0-src && mkdir Build && cp src/net/jimmc/jShortcut/*.* Build/net/jimmc/jShortcut/ && cp src/*.dll Build/ && cp src/EQDietDownloader.class Build/ && cd Build
-    - name: Build JAR file
-      run: 
+      run: javac -verbose EQDietDownloader1.0-src/src/EQDietDownloader.java
