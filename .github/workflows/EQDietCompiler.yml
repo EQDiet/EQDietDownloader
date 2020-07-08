@@ -21,5 +21,5 @@ jobs:
       run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /compile
     - name: Building JAR file through EQDiet Compiler
       run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /jar
-    - name: Test: Installing Launch4j through EQDiet Compiler
+    - name: "Test: Installing Launch4j through EQDiet Compiler"
       run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /launch4j
