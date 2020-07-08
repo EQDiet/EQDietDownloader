@@ -45,8 +45,8 @@ for /d %%i in (src\*.*) do xcopy /s /e /y "src\*.*" "build\"
 move backup\EQDietDownloader.java src >nul 2>nul
 rd /s /q backup >nul 2>nul
 echo.
-IF EXIST Build\EQDietDownloader.class (echo Compilation done! Check your Build folder.) else echo Error while compilating.
-exit /b
+IF EXIST Build\EQDietDownloader.class (echo Compilation done! Check your Build folder. && exit /b 0) else echo Error while compilating.
+exit /b 1
 
 :Clean
 echo Cleaning files...
@@ -74,9 +74,9 @@ echo Class-Path: . >>META-INF\MANIFEST.MF
 echo Main-Class: EQDietDownloader >>META-INF\MANIFEST.MF
 jar cvmf META-INF\MANIFEST.MF ..\Release\EQDietDownloader.jar *.class net\jimmc\jshortcut\*.* *.dll
 cd..
-IF EXIST Release\EQDietDownloader.jar (echo. && echo JAR file successfully generated at Release folder!) else echo. && echo Error generating JAR file
+IF EXIST Release\EQDietDownloader.jar (echo. && echo JAR file successfully generated at Release folder! && rd /s /q Build\META-INF && exit /b 0) else echo. && echo Error generating JAR file
 rd /s /q Build\META-INF
-exit /b
+exit /b 1
 
 :Launch4j
 echo Downloading Launch4j...
@@ -86,9 +86,9 @@ echo.
 echo Installing Launch4j...
 echo.
 %TEMP%\launch4j-3.12-win32.exe /S
-IF ERRORLEVEL ==1 (echo. && echo Error while installing Launch4j.) else (echo Launch4j has been successfully installed in your PC!)
+IF ERRORLEVEL ==1 (echo. && echo Error while installing Launch4j. && del %TEMP%\launch4j-3.12-win32.exe && exit /b 1) else (echo Launch4j has been successfully installed in your PC!)
 del %TEMP%\launch4j-3.12-win32.exe
-exit /b
+exit /b 0
 
 :Website
 echo | set /p website= "Redirecting to eqdiet.weebly.com... "
