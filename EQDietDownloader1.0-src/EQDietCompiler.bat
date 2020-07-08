@@ -34,7 +34,11 @@ echo Compiling EQDiet Downloader 1.0...
 echo.
 md Build >NUL 2>NUL
 pushd src
+IF /I "%~2"=="--distributable" (
 javac -verbose --release 8 EQDietDownloader.java -d ..\Build
+) else (
+javac -verbose EQDietDownloader.java -d ..\Build
+)
 echo.
 popd
 echo Copying necessary files...
