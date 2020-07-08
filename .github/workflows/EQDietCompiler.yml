@@ -18,8 +18,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Building class files through EQDiet Compiler
-      run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /compile
+      run: cd EQDietDownloader1.0-src && cmd /c EQDietCompiler.bat /compile
     - name: Building JAR file through EQDiet Compiler
-      run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /jar
+      run: cd EQDietDownloader1.0-src && cmd /c EQDietCompiler.bat /jar
     - name: "Test: Installing Launch4j through EQDiet Compiler"
-      run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /launch4j
+      run: cd EQDietDownloader1.0-src && cmd /c EQDietCompiler.bat /launch4j
