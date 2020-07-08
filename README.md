@@ -24,6 +24,9 @@ To know more about this release, visit [this link](https://eqdiet.weebly.com/rel
 - EQDiet Icon. Click [here](https://drive.google.com/uc?export=download&id=1FTz1a2WWUdH8tjqEx7AUVdR1lHHBMxJK) to get it.
 - Launch4j to convert jar file to exe file. You can download it using EQDietCompiler.bat
 
+### Build status:
+[![EQDiet Compiler](https://github.com/EQDiet/EQDietDownloader1.0/workflows/EQDiet%20Compiler/badge.svg)](https://github.com/EQDiet/EQDietDownloader1.0/actions?query=workflow%3A%22EQDiet+Compiler%22) [![Java Compiler (Javac)](https://github.com/EQDiet/EQDietDownloader1.0/workflows/Java%20Compiler%20(Javac)/badge.svg)](https://github.com/EQDiet/EQDietDownloader1.0/actions?query=workflow%3A%22Java+Compiler+%28Javac%29%22) [![Build status](https://ci.appveyor.com/api/projects/status/0enp7yw0ipq03p3n?svg=true)](https://ci.appveyor.com/project/EQDiet/EQDietDownloader1-0) [![Build Status](https://dev.azure.com/EQDiet/GitHub/_apis/build/status/EQDiet.EQDietDownloader1.0?branchName=master)](https://dev.azure.com/EQDiet/GitHub/_build/latest?definitionId=3&branchName=master)
+
 ### Procedure:
 
 1. Set Java JDK bin folder to PATH. View [this video](https://www.youtube.com/watch?v=vhBNV8no4CI) if you don't know how to do it.
