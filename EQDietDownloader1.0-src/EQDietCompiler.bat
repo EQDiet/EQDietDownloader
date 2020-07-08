@@ -45,7 +45,7 @@ for /d %%i in (src\*.*) do xcopy /s /e /y "src\*.*" "build\"
 move backup\EQDietDownloader.java src >nul 2>nul
 rd /s /q backup >nul 2>nul
 echo.
-IF EXIST Build\EQDietDownloader.class (echo Compilation done! Check your Build folder. && exit /b 0) else echo Error while compilating.
+IF EXIST Build\EQDietDownloader.class (echo Compilation done! Check your Build folder. && exit /b 0) else echo Error while compiling.
 exit /b 1
 
 :Clean
