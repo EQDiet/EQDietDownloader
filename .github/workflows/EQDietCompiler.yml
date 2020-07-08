@@ -1,0 +1,25 @@
+name: EQDiet Compiler
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Building class files through EQDiet Compiler
+      run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /compile
+    - name: Building JAR file through EQDiet Compiler
+      run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /jar
+    - name: Test: Installing Launch4j through EQDiet Compiler
+      run: cd EQDietDownloader1.0-src && EQDietCompiler.bat /launch4j
