@@ -1,0 +1,21 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- script: |
+    cd src
+    EQDietCompiler.bat /compile
+  displayName: 'Building class files through EQDiet Compiler'
+
+- script: |
+    cd src
+    EQDietCompiler.bat /jar
+  displayName: 'Building JAR file through EQDiet Compiler'
+  
+- script: |
+    cd src
+    EQDietCompiler.bat /launch4j
+  displayName: 'Test: Trying to install Launch4j through EQDiet Compiler'
