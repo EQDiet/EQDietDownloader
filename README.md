@@ -3,7 +3,7 @@ Downloads the latest version of EQDiet
 
 Welcome to EQDiet Downloader version 1.0. Hope you enjoy using our app! You can visit our website [here](https://eqdiet.weebly.com)
 
-#### Atention! This is not EQDiet app, this is an external app that downloads EQDiet app. If you want EQDiet App, visit our website [here](https://eqdiet.weebly.com/downloads.html) or our Github repositories [here](https://github.com/EQDiet).
+#### Atention! This is not EQDiet app, this is an external app that downloads EQDiet app. If you want EQDiet App, visit our website [here](https://eqdiet.weebly.com/downloads.html) or our GitHub repositories [here](https://github.com/EQDiet).
 
 We have recently released new product pages. You can see EQDiet Downloader's one at [this link](https://eqdiet.weebly.com/eqdiet-downloader.html)
 
