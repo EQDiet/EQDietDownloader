@@ -19,3 +19,10 @@ steps:
     cd EQDietDownloader1.0-src
     EQDietCompiler.bat /launch4j
   displayName: 'Test: Trying to install Launch4j through EQDiet Compiler'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)\s\EQDietDownloader1.0-src\Release\EQDietDownloader.jar'
+    artifact: 'EQDiet Downloader 1.0 JAR file'
+    publishLocation: 'pipeline'
+  displayName: 'Publishing Pipeline Artifacts'
