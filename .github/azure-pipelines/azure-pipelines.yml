@@ -1,28 +1,31 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'windows-latest'
+jobs:
+- job: Windows
 
-steps:
-- script: |
-    cd EQDietDownloader1.0-src
-    EQDietCompiler.bat /compile
-  displayName: 'Building class files through EQDiet Compiler'
+  pool:
+    vmImage: 'windows-latest'
 
-- script: |
-    cd EQDietDownloader1.0-src
-    EQDietCompiler.bat /jar
-  displayName: 'Building JAR file through EQDiet Compiler'
+  steps:
+  - script: |
+      cd EQDietDownloader1.0-src
+      EQDietCompiler.bat /compile
+    displayName: 'Building class files through EQDiet Compiler'
+
+  - script: |
+      cd EQDietDownloader1.0-src
+      EQDietCompiler.bat /jar
+    displayName: 'Building JAR file through EQDiet Compiler'
   
-- script: |
-    cd EQDietDownloader1.0-src
-    EQDietCompiler.bat /launch4j
-  displayName: 'Test: Trying to install Launch4j through EQDiet Compiler'
+  - script: |
+      cd EQDietDownloader1.0-src
+      EQDietCompiler.bat /launch4j
+    displayName: 'Test: Trying to install Launch4j through EQDiet Compiler'
 
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(Pipeline.Workspace)\s\EQDietDownloader1.0-src\Release\EQDietDownloader.jar'
-    artifact: 'EQDiet Downloader 1.0 JAR file'
-    publishLocation: 'pipeline'
-  displayName: 'Publishing Pipeline Artifacts'
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: '$(Pipeline.Workspace)\s\EQDietDownloader1.0-src\Release\EQDietDownloader.jar'
+      artifact: 'EQDiet Downloader 1.0 JAR file'
+      publishLocation: 'pipeline'
+    displayName: 'Publishing Pipeline Artifacts'
