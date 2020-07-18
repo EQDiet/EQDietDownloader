@@ -18,4 +18,4 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with javac
-      run: javac -verbose EQDietDownloader.java
+      run: cd src && javac -verbose EQDietDownloader.java
