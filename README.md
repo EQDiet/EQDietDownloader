@@ -11,24 +11,24 @@ To know more about this release, visit [this link](https://eqdiet.weebly.com/rel
 
 ![Image of EQDiet](https://eqdiet.weebly.com/uploads/1/2/2/7/122786941/eqdiet_orig.png)
 
-## Building the source code:
+## Building the source code
 
-### Requirements:
+### Requirements
 
-#### Necessary requirements:
+#### Necessary requirements
 
 - Latest Java SE Development Kit (JDK). Click [here](https://lumi.gq/jdk) if you don't have it.
 
-#### Optional requirements:
+#### Optional requirements
 
 - EQDiet Icon. Click [here](https://drive.google.com/uc?export=download&id=1FTz1a2WWUdH8tjqEx7AUVdR1lHHBMxJK) to get it.
 - Launch4j to convert jar file to exe file. You can download it using EQDietCompiler.bat
 
-### Build status:
+### Build status
 | [![EQDiet Compiler](https://github.com/EQDiet/EQDietDownloader1.0/workflows/EQDiet%20Compiler/badge.svg)](https://github.com/EQDiet/EQDietDownloader1.0/actions?query=workflow%3A%22EQDiet+Compiler%22) | [![Java Compiler (Javac)](https://github.com/EQDiet/EQDietDownloader1.0/workflows/Java%20Compiler%20(Javac)/badge.svg)](https://github.com/EQDiet/EQDietDownloader1.0/actions?query=workflow%3A%22Java+Compiler+%28Javac%29%22) | [![Build status](https://ci.appveyor.com/api/projects/status/0enp7yw0ipq03p3n?svg=true)](https://ci.appveyor.com/project/EQDiet/EQDietDownloader1-0) | [![Build Status](https://dev.azure.com/EQDiet/GitHub/_apis/build/status/EQDiet.EQDietDownloader1.0?branchName=master)](https://dev.azure.com/EQDiet/GitHub/_build/latest?definitionId=3&branchName=master) |
 |:-:|:-:|:-:|:-:|
 
-### Procedure:
+### Procedure
 
 1. Set Java JDK bin folder to PATH. View [this video](https://www.youtube.com/watch?v=vhBNV8no4CI) if you don't know how to do it.
 2. Download the source code by clicking "clone or download" button or by running this command:                          
@@ -52,5 +52,5 @@ To know more about this release, visit [this link](https://eqdiet.weebly.com/rel
 17. Click "Build wrapper" icon.
 18. Done! Check the EXE output folder you have selected and now you will have an official copy of EQDiet Downloader 1.0!
 
-### Note this project is protected by the MIT License. You can read it [here](https://github.com/EQDiet/EQDietDownloader1.0/blob/master/LICENSE).
-#### © 2020, EQDiet.
+### This project is protected by the MIT License. You can read it [here](https://github.com/EQDiet/EQDietDownloader1.0/blob/master/LICENSE).
+**© 2020, EQDiet. - [eqdiet.weebly.com](https://eqdiet.weebly.com)**
