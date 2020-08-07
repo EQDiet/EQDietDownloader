@@ -5,13 +5,22 @@ jobs:
     vmImage: 'windows-latest'
 
   steps:
-  - script: EQDietCompiler.bat /compile
+  - task: BatchScript@1
+    inputs:
+      filename: 'EQDietCompiler.bat'
+      arguments: '/compile'
     displayName: 'Building class files through EQDiet Compiler'
 
-  - script: EQDietCompiler.bat /jar
+  - task: BatchScript@1
+    inputs:
+      filename: 'EQDietCompiler.bat'
+      arguments: '/jar'
     displayName: 'Building JAR file through EQDiet Compiler'
-  
-  - script: EQDietCompiler.bat /launch4j
+
+  - task: BatchScript@1
+    inputs:
+      filename: 'EQDietCompiler.bat'
+      arguments: '/launch4j'
     displayName: 'Test: Trying to install Launch4j through EQDiet Compiler'
 
   - task: PublishPipelineArtifact@1
