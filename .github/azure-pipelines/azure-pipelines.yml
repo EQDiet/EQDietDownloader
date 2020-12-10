@@ -26,6 +26,6 @@ jobs:
   - task: PublishPipelineArtifact@1
     inputs:
       targetPath: '$(Pipeline.Workspace)\s\Release\EQDietDownloader.jar'
-      artifact: 'EQDiet Downloader 1.0 JAR file'
+      artifact: 'EQDiet Downloader JAR file'
       publishLocation: 'pipeline'
     displayName: 'Publishing Pipeline Artifacts'
